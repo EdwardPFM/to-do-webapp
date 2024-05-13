@@ -58,12 +58,26 @@ ul{
 
 .calendar .days{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-left: 0px;
     margin: 0px;
     background-color: rgb(212, 209, 209);
 }
-.days li{
+.days li,
+.dates li{
     margin: 0px;
     padding: 1em;
+}
+
+.calendar .dates{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin: 0px;
+}
+.dates li{
+    box-sizing: border-box;
+    block-size: 52px;
+    inline-size: 50px;
+    text-align: center;
 }
